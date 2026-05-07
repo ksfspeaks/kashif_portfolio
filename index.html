@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kashif Riyaz | Intern</title>
+    <title>Kashif Riaz | Intern</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
         <div class="hero-content">
             <div class="name-bg">
                 <h1>Kashif Riaz</h1>
-                <h2>Devops Intern</h2>
+                <h2>Intern</h2>
             </div>
             <p class="tagline">Crafting efficient solutions through code & curiosity</p>
             <div class="buttons">
@@ -24,7 +24,7 @@
 
     <section id="about" class="section">
         <h3>About Me</h3>
-        <p>I'm Kashif Riyaz, a tech enthusiast and intern with a passion for Linux systems and backend development. 
+        <p>I'm Kashif Riaz, a tech enthusiast and intern with a passion for Linux systems and backend development. 
            My field of interest lies in DevOps, automation, and building reliable infrastructure. 
            I love exploring Ubuntu, writing shell scripts, and learning how things work under the hood. 
            Currently sharpening my skills in Git, Docker, and cloud technologies.</p>
@@ -49,7 +49,7 @@
         <h3>Get In Touch</h3>
         <p>Let's connect and build something great together</p>
         <div class="social">
-            <a href="mailto:riazkashif383@gmail.com">riazkahsif383@gmail.com</a>
+            <button onclick="showEmail()" class="email-btn" id="emailBtn">Show Email</button>
             <a href="https://github.com/">GitHub</a>
             <a href="https://linkedin.com/">LinkedIn</a>
         </div>
@@ -58,5 +58,15 @@
     <footer>
         <p>© 2026 Kashif Riaz | Built with Ubuntu & GitHub Pages</p>
     </footer>
+
+    <script>
+        function showEmail() {
+            const btn = document.getElementById('emailBtn');
+            btn.innerHTML = '<a href="mailto:RIAZKASHIF383@gmail.com" style="color: #0f2027; text-decoration: none;">RIAZKASHIF383@gmail.com</a>';
+            btn.style.background = '#4fc3f7';
+            btn.style.cursor = 'default';
+            btn.onclick = null;
+        }
+    </script>
 </body>
 </html>
