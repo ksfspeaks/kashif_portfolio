@@ -21,17 +21,28 @@ body {
     color: white;
 }
 
+.name-bg {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
 .hero-content h1 {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 .hero-content h2 {
     font-size: 2rem;
     font-weight: 300;
     color: #4fc3f7;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .tagline {
@@ -135,6 +146,7 @@ body {
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .social a {
@@ -158,5 +170,7 @@ footer {
 @media (max-width: 768px) {
     .hero-content h1 { font-size: 2.5rem; }
     .hero-content h2 { font-size: 1.5rem; }
+    .name-bg { padding: 20px 30px; }
     .buttons { flex-direction: column; align-items: center; }
+    .social { flex-direction: column; gap: 15px; }
 }
